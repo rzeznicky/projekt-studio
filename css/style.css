@@ -1,0 +1,316 @@
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.section-subtitle {
+  color: grey;
+  font-style: italic;
+  padding-bottom: 20px;
+  margin-top: 0;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 30px auto;
+  padding: 16px 0;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background: inherit;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 60px;
+  background-color: gold;
+  color: white;
+}
+
+.btn:hover {
+  transition: all 1s;
+  background: blue;
+}
+
+/* intro */
+.intro {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://i.postimg.cc/hPpNPLcz/pexels-tirachard-kumtanom-347139.jpg);
+  background-size: cover;
+  background-position: fixed;
+}
+
+.intro::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: black;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+  opacity: 0.75;
+}
+
+/* navigation  */
+.navigation {
+  padding: 5px;
+}
+
+.navigation .row div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo {
+  color: gold;
+  font-family: "Pacifico", cursive;
+  font-style: italic;
+  margin: 5px 0;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation li {
+  display: inline-block;
+  position: relative;
+  padding: 5px 20px;
+}
+
+.navigation li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation li a:hover {
+  color: gold;
+}
+
+.navigation ul ul li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li ul {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0px;
+}
+
+.navigation li:hover ul {
+  display: block;
+  text-align: center;
+  background: white;
+}
+
+.navigation ul li ul li a {
+  display: block;
+  font-size: 12px;
+  padding: 0;
+  color: black;
+  padding: 5px 20px;
+}
+
+.navigation ul li ul li a:hover {
+  color: white;
+  background: gold;
+}
+
+/* Splash */
+header {
+  /* background-image: url(https://i.postimg.cc/hPpNPLcz/pexels-tirachard-kumtanom-347139.jpg); */
+  /* background-size: cover; */
+  /* background-position: fixed; */
+  color: white;
+  min-height: 500px;
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+
+.splash-inner {
+  margin: auto;
+  max-width: 70%;
+  z-index: 1;
+  padding: 20px;
+  top: 100px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 40px;
+  font-style: oblique;
+  text-transform: capitalize;
+}
+
+.page-subtitle {
+  margin: 20px 0;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* Services */
+.services {
+  text-align: center;
+}
+
+.services .row {
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin-top: 30px;
+}
+
+.wrapper i {
+  font-size: 30px;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border: 3px solid gold;
+  border-radius: 50%;
+  color: gold;
+}
+
+/* Portfolio */
+.portfolio {
+  background: lightgrey;
+  text-align: center;
+}
+
+.portfolio .row {
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card h4 {
+  margin: 0;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.card-description {
+  padding-bottom: 30px;
+  margin: 0;
+  color: grey;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
+footer p {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.footer-logo {
+  padding: 0;
+}
+
+.footer-logo li {
+  display: inline-block;
+  font-size: 0;
+  margin: 0 3px;
+}
+
+.footer-logo i {
+  font-size: 20px;
+  line-height: 40px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  background: black;
+  border-radius: 50%;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    font-size: 12px;
+  }
+  .page-title {
+    font-size: 35px;
+  }
+  .page-subtitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .page-title {
+    font-size: 25px;
+  }
+  .page-subtitle {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxXQUFBO0FBQ0E7RUFDSSxzQkFBQTtBQ0NKOztBRENFO0VBQ0UsU0FBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLHFDQUFBO0VBQ0EsV0FBQTtBQ0VKOztBREFFO0VBQ0UsaUJBQUE7RUFDQSxVQUFBO0VBQ0EsY0FBQTtBQ0dKOztBRERFO0VBQ0UsZ0JBQUE7QUNJSjs7QURGRTtFQUNFLHlCQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0FDS0o7O0FESEU7RUFDRSxXQUFBO0VBQ0Esa0JBQUE7RUFDQSxvQkFBQTtFQUNBLGFBQUE7QUNNSjs7QURKRTtFQUNFLHFCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxpQkFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0EscUJBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0VBQ0EsZUFBQTtFQUNBLHlCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxzQkFBQTtFQUNBLFlBQUE7QUNPSjs7QURMRTtFQUNFLGtCQUFBO0VBQ0EsZ0JBQUE7QUNRSjs7QURORSxVQUFBO0FBQ0E7RUFDRSxTQUFBO0VBQ0EsVUFBQTtFQUNBLGFBQUE7RUFDQSxXQUFBO0VBQ0EseUZBQUE7RUFDQSxzQkFBQTtFQUNBLDBCQUFBO0FDU0o7O0FEUEU7RUFDRSxXQUFBO0VBQ0EsWUFBQTtFQUNBLFdBQUE7RUFDQSxpQkFBQTtFQUNBLFVBQUE7RUFDQSxPQUFBO0VBQ0EsTUFBQTtFQUNBLGtCQUFBO0VBQ0EsYUFBQTtBQ1VKOztBRFJFLGdCQUFBO0FBQ0E7RUFDRSxZQUFBO0FDV0o7O0FEVEU7RUFDRSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtFQUNBLFVBQUE7QUNZSjs7QURWRTtFQUNFLFdBQUE7RUFDQSxnQ0FBQTtFQUNBLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7RUFDQSxxQkFBQTtBQ2FKOztBRFhF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 */
