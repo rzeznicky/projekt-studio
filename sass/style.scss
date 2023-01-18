@@ -2,12 +2,15 @@
 *, *::before, *::after {
     box-sizing: border-box;
   }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   body {
     margin: 0;
     font-size: 15px;
     line-height: 1.7;
     font-family: 'Montserrat', sans-serif;
-    width: 100%;
   }
   .container {
     max-width: 1140px;
@@ -50,30 +53,43 @@
     background: blue;
   }
   /* intro */
-  .intro {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100%;
-    background-image: url(https://i.postimg.cc/hPpNPLcz/pexels-tirachard-kumtanom-347139.jpg);
-    background-size: cover;
-    background-position: fixed;
-  }
-  .intro::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    background: black;
-    z-index: 0;
-    left: 0;
-    top: 0;
-    position: absolute;
-    opacity: 0.75;
-  }
+  // .intro {
+  //   margin: 0;
+  //   padding: 0;
+  //   height: 100vh;
+  //   width: 100%;
+  //   background-image: url(https://i.postimg.cc/hPpNPLcz/pexels-tirachard-kumtanom-347139.jpg);
+  //   background-size: cover;
+  //   background-position: fixed;
+  // }
+  // .intro::before {
+  //   content: "";
+  //   height: 100%;
+  //   width: 100%;
+  //   background: black;
+  //   z-index: 0;
+  //   left: 0;
+  //   top: 0;
+  //   position: absolute;
+  //   opacity: 0.75;
+  // }
   /* navigation  */
-  .navigation {
+  nav {
     padding: 5px;
+    background: none;
+    min-height: 10vh;
   }
+  nav::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      background: black;
+      z-index: 0;
+      left: 0;
+      top: 0;
+      position: absolute;
+      opacity: 0.75;
+    }
   .navigation .row div {
     display: flex;
     justify-content: center;
@@ -136,22 +152,37 @@
   }
   /* Splash */
   header {
-    /* background-image: url(https://i.postimg.cc/hPpNPLcz/pexels-tirachard-kumtanom-347139.jpg); */
-    /* background-size: cover; */
-    /* background-position: fixed; */
+    background-image: url(https://i.postimg.cc/hPpNPLcz/pexels-tirachard-kumtanom-347139.jpg); 
+    background-size: cover;
+    background-position: fixed;
     color: white;
-    min-height: 500px;
+    height: 100%;
     display: flex;
-    // height: calc(100vh - 60px);
+    height: 90vh;
+    min-height: 500px;
     text-align: center;
     position: relative;
+
+    align-items: center;
+    // top: 0;
+    // left: 0;
   }
+  header::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      background: black;
+      z-index: 0;
+      left: 0;
+      top: 0;
+      position: absolute;
+      opacity: 0.75;
+    }
   .splash-inner {
-    margin: auto;   
+    margin: 0 auto;   
     max-width: 70%;
     z-index: 1;
-    padding: 20px;
-    top: 100px;
+    padding: 100px 0;
   }
   .page-title {
     margin: 0;
@@ -171,7 +202,6 @@
     text-align: center;
   }
   .services .row {
-    display: flex;
     justify-content: center;
     max-width: 90%;
     margin: 0 auto;
@@ -196,7 +226,6 @@
     text-align: center;
   }
   .portfolio .row {
-    display: flex;
     justify-content: center;
     max-width: 90%;
     margin: 0 auto;
@@ -258,10 +287,13 @@
         font-size: 12px;
     }
     .page-title {
-        font-size: 35px;
+        font-size: 40px;
     }
     .page-subtitle {
-        font-size: 40px;
+        font-size: 50px;
+    }
+    .btn {
+      margin-top: 30px;
     }
 }
 @media (max-width: 575px) {
@@ -270,5 +302,8 @@
     }
     .page-subtitle {
         font-size: 30px;
+    }
+    .btn {
+      margin-top: 20px;
     }
 }
