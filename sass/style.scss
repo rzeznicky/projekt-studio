@@ -2,10 +2,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
   }
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
   body {
     margin: 0;
     font-size: 15px;
@@ -47,7 +43,7 @@
     transition: all 1s;
     background: blue;
   }
-
+  
   /* Navigation  */
   nav {
     padding: 5px;
@@ -164,7 +160,7 @@
   .services {
     text-align: center;
   }
-  .services .row {
+  .services-row {
     justify-content: center;
     max-width: 90%;
     margin: 0 auto;
@@ -188,7 +184,7 @@
     background: lightgrey;
     text-align: center;
   }
-  .portfolio .row {
+  .portfolio-row {
     justify-content: center;
     max-width: 90%;
     margin: 0 auto;
